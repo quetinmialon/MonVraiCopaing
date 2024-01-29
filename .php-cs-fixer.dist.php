@@ -1,12 +1,13 @@
 <?php
 
-$finder = PhpCsFixer\Finder::create()
-    ->in(__DIR__);
+$finder = (new PhpCsFixer\Finder())
+    ->in(__DIR__)
+;
 
-return PhpCsFixer\Config::create()
+return (new PhpCsFixer\Config())
     ->setRules([
-        '@PER-CS2.0' => true,
-        '@PHP83Migration' => true,
+        '@PER-CS' => true,
+        '@PHP82Migration' => true,
     ])
-    ->setFinder($finder);
-
+    ->setFinder($finder)
+;

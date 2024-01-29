@@ -1,9 +1,5 @@
-<?php 
+<?php
 
 namespace App;
 
-class App{
-    
-
-};
-
+class App {};

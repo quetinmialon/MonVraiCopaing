@@ -13,11 +13,11 @@
     
     "autoload": {
         "psr-4": {
-            "MVC\\": "src/",
-            "App\\":"app/"
+            "MVC\\": "./src",
+            "App\\":"./app"
         },
-        "psr-0": {
-            "":"app/functions.php"
-        }
+        "files": 
+            ["app/functions.php"]
+        
     }
 }
