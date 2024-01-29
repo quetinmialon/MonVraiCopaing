@@ -9,6 +9,8 @@ class App
 
     private array $container = [];
 
+    private function __construct(){}
+
     public function singleton(\Closure $closure, string $name)
     {
         $value = $closure($this);
